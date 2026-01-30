@@ -4,11 +4,23 @@ import Footer from "./components/Footer/footer"
 
 export default function App() {
   return (
-    <div className="app">
+    // <>
+    //   <div className="blur-bg" />
+    //   <Header />
+
+    //   <div className="page">
+    //     <Main />
+    //     <Footer />
+    //   </div>
+    // </>
+    <div className="app-root">
       <div className="blur-bg" />
       <Header />
-      <Main />
-      <Footer />
+
+      <div className="page">
+        <Main />
+        <Footer />
+      </div>
     </div>
   )
 }

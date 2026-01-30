@@ -1,3 +1,4 @@
+import { createPortal } from "react-dom"
 import { useEffect, useState } from "react"
 import "./modal.css"
 
@@ -6,13 +7,11 @@ export default function ImageModal({ img, onClose }) {
 
   useEffect(() => {
     setVisible(true)
+    document.body.style.overflow = "hidden"
 
-    const closeOnEsc = (e) => {
-      if (e.key === "Escape") handleClose()
+    return () => {
+      document.body.style.overflow = ""
     }
-
-    window.addEventListener("keydown", closeOnEsc)
-    return () => window.removeEventListener("keydown", closeOnEsc)
   }, [])
 
   const handleClose = () => {
@@ -20,16 +19,13 @@ export default function ImageModal({ img, onClose }) {
     setTimeout(onClose, 300)
   }
 
-  return (
+  return createPortal(
     <div
       className={`modal ${visible ? "show" : ""}`}
       onClick={handleClose}
     >
-      <img
-        src={img}
-        alt=""
-        onClick={handleClose}
-      />
-    </div>
+      <img src={img} alt="" onClick={handleClose} />
+    </div>,
+    document.getElementById("modal-root")
   )
 }
