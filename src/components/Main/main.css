@@ -1,0 +1,82 @@
+.main {
+
+  padding: 70px 10px 70px 10px;
+  text-align: center;
+  
+}
+
+.main h1 {
+  font-family: "Great Vibes";
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px rgba(58, 41, 60, 0.688);
+  object-fit: cover;
+  margin-bottom: 16px;
+  
+}
+
+.desc {
+  min-width: 500px;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  text-align: center;
+  max-width: 320px;
+  margin-bottom: 32px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-btn {
+  min-width: 500px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.15);
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(234, 56, 219, 0.157);
+  transition: all .3s ease;
+}
+
+.link-btn:hover {
+    scale: 1.02;
+    box-shadow: 0 0 10px rgba(234, 56, 219, 0.37);
+}
+
+.link-btn img {
+  width: 35px;
+  border-radius: 7px;
+}
+
+
+@media (max-width: 767px) {
+    .link-btn {
+        min-width: 100px;
+        
+    }
+
+    .desc {
+        min-width: 100px;
+
+    }
+
+    .main {
+
+        padding: 70px 10px 20px 10px;
+    
+    }
+}

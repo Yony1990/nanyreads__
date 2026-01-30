@@ -1,0 +1,42 @@
+.header {
+
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 99%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0);
+  z-index: 10;
+}
+
+.logo {
+  width: 48px;
+  cursor: pointer;
+  filter: drop-shadow(0 0px 10px rgba(58, 41, 60, 0.688));
+}
+
+.share {
+  cursor: pointer;
+  color: rgb(25, 21, 25);
+  transition: all .3s ease;
+}
+
+.share:hover {
+  color: rgb(96, 74, 96);
+}
+
+.share i {
+  font-size: 1.4em;
+  text-shadow: 0 0 10px rgb(238, 131, 255);
+}
+
+
+/* @media (max-width: 550px) {
+    .header {
+        width: 95%;
+    }
+} */

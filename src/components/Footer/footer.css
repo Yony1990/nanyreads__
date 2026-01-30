@@ -1,0 +1,50 @@
+
+.carousel {
+  width: 50%;
+  display: flex;
+
+  gap: 12px;
+  padding: 16px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  scroll-behavior: auto; /* importante: NO smooth por CSS */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  width: 70px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.carousel img:hover {
+    scale: 1.1;
+    
+}
+
+
+@media (max-width: 767px) {
+    .carousel {
+        width: 97%;
+
+
+    }
+    .carousel img {
+
+        width: 40px;
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
