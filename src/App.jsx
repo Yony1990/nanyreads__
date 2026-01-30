@@ -4,15 +4,6 @@ import Footer from "./components/Footer/footer"
 
 export default function App() {
   return (
-    // <>
-    //   <div className="blur-bg" />
-    //   <Header />
-
-    //   <div className="page">
-    //     <Main />
-    //     <Footer />
-    //   </div>
-    // </>
     <div className="app-root">
       <div className="blur-bg" />
       <Header />
