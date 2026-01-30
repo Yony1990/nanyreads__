@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   background: url("./assets/img/fondo1.JPG") center / cover no-repeat;
   color: rgb(25, 21, 25);
+  background-color: black;
 }
 
 .app {
